@@ -1,6 +1,8 @@
-struct EasyCard {
-    var text = "Hello, World!"
+import Foundation
+
+struct EasyCard{
+    
 }
 
 
-
+/Users/tushar/Desktop/iOS/Subscribe/.travis.yml

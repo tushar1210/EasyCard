@@ -46,7 +46,7 @@ class EasyCard:UIView{
     /// Sets up the sub views
     private func addSublayouts(){
         logoImageView.frame = CGRect(x: frame.minX+8, y: frame.minY+5, width: 75, height: 30)
-        logoImageView.image = UIImage(named: cardModel.cardImage!.rawValue)
+        logoImageView.image = UIImage(named: cardModel.cardImage.rawValue)
         logoImageView.contentMode = .scaleAspectFit
         addSubview(logoImageView)
         
@@ -60,7 +60,7 @@ class EasyCard:UIView{
         
         cardNumberLabel.frame = CGRect(x: frame.midX-145 , y: 83, width: 290, height: 25)
         cardNumberLabel.center = CGPoint(x: frame.midX, y: 83)
-        cardNumberLabel.text = formatCardNumber(cardModel.cardNumber!)
+        cardNumberLabel.text = formatCardNumber(cardModel.cardNumber)
         cardNumberLabel.textAlignment = .center
         cardNumberLabel.font = UIFont(name: "AndaleMono", size: 22)
         cardNumberLabel.adjustsFontSizeToFitWidth = true

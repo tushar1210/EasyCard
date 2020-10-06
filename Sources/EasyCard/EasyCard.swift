@@ -1,7 +1,6 @@
 import Foundation
+#if canImport(UIKit)
 import UIKit
-
-
 class EasyCard:UIView{
     
     //MARK:- Properties
@@ -13,8 +12,7 @@ class EasyCard:UIView{
     var nameLabel = UILabel()
     var cardModel = EasyCardModel()
 
-    
-    
+        
     //MARK:- Methods
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -79,8 +77,14 @@ class EasyCard:UIView{
         nameLabel.font = UIFont(name: "AndaleMono", size: 15)
         nameLabel.adjustsFontSizeToFitWidth = true
         addSubview(nameLabel)
+        generateGradient(nil)
     }
     
+    /// Setup constraints for views and labels
+    
+    func setupConstraints(){
+        
+    }
     
     /// Sets CornerRadius for the back
     /// - Parameter radius: CGFloat
@@ -164,10 +168,6 @@ class EasyCard:UIView{
     func setupNameHolder(_ name: String){
         nameLabel.text = name
     }
-    
-    
-    
-        
-    
-    
 }
+
+#endif

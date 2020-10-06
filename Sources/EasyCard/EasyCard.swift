@@ -18,10 +18,14 @@ class EasyCard:UIView{
     //MARK:- Methods
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        setUpView()
+        addSublayouts()
     }
     
     override init(frame:CGRect){
         super.init(frame:frame)
+        setUpView()
+        addSublayouts()
     }
     
     //MARK:- Main card view methods

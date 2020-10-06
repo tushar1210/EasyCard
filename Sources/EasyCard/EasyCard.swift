@@ -25,7 +25,7 @@ class EasyCard:UIView{
         super.init(frame:frame)
     }
     
-    //Mark:- Main card view methods
+    //MARK:- Main card view methods
     
     /// Sets up the main card view
     private func setUpView(){
@@ -102,6 +102,17 @@ class EasyCard:UIView{
         }
     }
     
+    /// Add specific gradient
+    /// - Parameter gradientLayer: Layer to be inserted at 0
+    func addCustomGradientLayer(gradientLayer:CAGradientLayer){
+        if let lowLayer = layer.sublayers?[0]{
+            layer.replaceSublayer(lowLayer, with: gradientLayer)
+        }else{
+            layer.insertSublayer(gradientLayer, at: 0)
+        }
+    }
+    
+    
     //MARK:- cardNumberLabel methods
     private func formatCardNumber(_ number:String)->String{
         if(number=="" || number.count==0 || number.count>17){
@@ -139,6 +150,18 @@ class EasyCard:UIView{
     func setCardProviderImage(image: String){
         logoImageView.image = UIImage(named: image)
     }
+    
+    //MARK:- nameLabel Methods
+    
+    /// Set name label
+    /// - Parameter name: Name string
+    func setupNameHolder(_ name: String){
+        nameLabel.text = name
+    }
+    
+    
+    
+    
     
     
     

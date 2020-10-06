@@ -15,7 +15,6 @@ struct EasyCardModel {
         case debit = "DEBIT"
         case credit = "CREDIT"
     }
-    var cornerRadius:CGFloat = 10
     var type:typeEnum?
     enum cardProviderImageEnum:String {
         case masterCard = "MasterCardLogo"

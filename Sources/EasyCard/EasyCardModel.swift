@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 struct EasyCardModel {
-    var name:String?
+    var name:String = "Card Holder"
     enum typeEnum:String {
         case debit = "DEBIT"
         case credit = "CREDIT"
@@ -23,9 +23,9 @@ struct EasyCardModel {
         case rupay = "RuPayLogo"
     }
 
-    var cardImage:cardProviderImageEnum?
-    var date:String?
-    var cardNumber:String?
+    var cardImage:cardProviderImageEnum = .amex
+    var date:String = "10/20"
+    var cardNumber:String = "••••   ••••   ••••   ••••"
     
     var frame:CGRect = CGRect(x: 0, y: 0, width: 200, height: 100)
     

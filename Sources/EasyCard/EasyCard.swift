@@ -24,8 +24,11 @@ class EasyCard:UIView{
     
     override init(frame:CGRect){
         super.init(frame:frame)
+        self.frame = frame
+        cardModel.frame = frame
         setUpView()
         addSublayouts()
+        
     }
     
     //MARK:- Main card view methods

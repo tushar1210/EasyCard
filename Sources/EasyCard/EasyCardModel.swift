@@ -15,7 +15,7 @@ struct EasyCardModel {
         case debit = "DEBIT"
         case credit = "CREDIT"
     }
-    var type:typeEnum?
+    var type:typeEnum = .debit
     enum cardProviderImageEnum:String {
         case masterCard = "MasterCardLogo"
         case visa = "VisaLogo"

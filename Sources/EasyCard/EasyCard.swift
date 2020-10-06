@@ -52,7 +52,7 @@ class EasyCard:UIView{
         
         typeLabel.frame = CGRect(x: frame.midX-35, y: 30, width: 70, height: 20)
         typeLabel.center = CGPoint(x: frame.midX, y: 30)
-        typeLabel.attributedText = NSAttributedString(string: cardModel.type!.rawValue, attributes: [.underlineStyle: NSUnderlineStyle.single.rawValue])
+        typeLabel.attributedText = NSAttributedString(string: cardModel.type.rawValue, attributes: [.underlineStyle: NSUnderlineStyle.single.rawValue])
         typeLabel.textAlignment = .center
         typeLabel.font = UIFont(name: "AndaleMono", size: 18)
         typeLabel.adjustsFontSizeToFitWidth = true

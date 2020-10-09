@@ -168,6 +168,8 @@ class EasyCard:UIView{
     func setupNameHolder(_ name: String){
         nameLabel.text = name
     }
+    
+    
 }
 
 #endif
